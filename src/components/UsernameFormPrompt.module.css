@@ -1,3 +1,40 @@
+.form {
+  background-color: aliceblue;
+  color: black;
+  padding: 0 10rem;
+  padding-top: 5rem;
+  border-radius: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  height: 50%;
+  width: 50%;
+  z-index: 10;
+}
+
+.background {
+  z-index: 9;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00000079;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@supports (backdrop-filter: blur(50px)) {
+  .background {
+    background-color: transparent;
+    backdrop-filter: blur(50px) contrast(50%);
+  }
+}
+
 .title1 {
   font-size: 3.5rem;
   font-weight: 100;

@@ -1,7 +1,6 @@
 import React from 'react';
 import useInputForm from 'hooks/useInputForm';
 import classes from 'components/UsernameFormPrompt.module.css';
-import { form, container } from 'shared/styles.module.css';
 
 export default function UsernameFormPrompt(props) {
   const { updateInput } = props;
@@ -14,8 +13,8 @@ export default function UsernameFormPrompt(props) {
   };
 
   return (
-    <div className={container}>
-      <form className={form} onSubmit={handleSubmit}>
+    <div className={classes.background}>
+      <form className={classes.form} onSubmit={handleSubmit}>
         <h2 className={classes.title1}>Hello, there!</h2>
         <h3 className={classes.title2}>What's your name?</h3>
         <div className={classes['input-container']}>
