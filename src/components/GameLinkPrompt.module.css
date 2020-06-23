@@ -1,0 +1,30 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000070;
+  padding: 5% 0;
+}
+
+@supports (backdrop-filter: blur(50px)) {
+  .container {
+    background-color: transparent;
+    backdrop-filter: blur(50px) contrast(50%);
+  }
+}
+
+.content {
+  height: 100%;
+  background-color: aliceblue;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 2rem;
+}

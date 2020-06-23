@@ -18,7 +18,7 @@ export default function UsernameFormPrompt(props) {
         <h2 className={classes.title1}>Hello, there!</h2>
         <h3 className={classes.title2}>What's your name?</h3>
         <div className={classes['input-container']}>
-          <label className={classes.label} for="username">
+          <label className={classes.label} htmlFor="username">
             {!isFull ? '' : 'Username must be 15 chars or less'}
           </label>
           <input

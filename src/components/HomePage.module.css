@@ -2,16 +2,18 @@
   font-size: 3.5rem;
   font-weight: 100;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .btn-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 100%;
 }
 
 .homepage-btn {
   width: 100%;
-  margin: 1rem;
+  margin: 1rem 0 !important;
+  text-decoration: none;
 }
